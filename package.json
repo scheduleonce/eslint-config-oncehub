@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-oncehub",
+  "name": "@oncehub/eslint-config",
   "version": "1.0.0",
   "description": "ESLint configuration for micro-services built using Node.js and TypeScript",
   "main": "index.js",
@@ -8,7 +8,6 @@
   },
   "author": "Rajat Saxena <rajat.saxena@oncehub.com>",
   "license": "ISC",
-  "peerDependencies": {},
   "dependencies": {
     "eslint": ">= 6.8",
     "typescript": ">= 3.2",
@@ -17,5 +16,13 @@
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-sonarjs": "^0.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scheduleonce/eslint-config-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scheduleonce/eslint-config-nodejs/issues"
+  },
+  "homepage": "https://github.com/scheduleonce/eslint-config-nodejs#readme"
 }
