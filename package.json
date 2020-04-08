@@ -19,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scheduleonce/eslint-config-nodejs.git"
+    "url": "git+https://github.com/scheduleonce/eslint-config-oncehub.git"
   },
   "bugs": {
-    "url": "https://github.com/scheduleonce/eslint-config-nodejs/issues"
+    "url": "https://github.com/scheduleonce/eslint-config-oncehub/issues"
   },
-  "homepage": "https://github.com/scheduleonce/eslint-config-nodejs#readme"
+  "homepage": "https://github.com/scheduleonce/eslint-config-oncehub#readme"
 }
