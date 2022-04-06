@@ -6,6 +6,6 @@ npm whoami
 npm i
 npm run package
 filename="$(npm pack --dry-run | tail -n 1)"
-npm publish dist/ui/$filename --registry=https://registry.npmjs.org/
+npm publish $filename --registry=https://registry.npmjs.org/
 
 echo "$filename package pushed to NPM successfully"
