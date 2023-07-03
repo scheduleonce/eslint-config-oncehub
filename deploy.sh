@@ -4,7 +4,7 @@ set -e
 node package-deploy/npm-login.js $(cat "/etc/npm-cred/NPM_AUTH_TOKEN")
 npm whoami
 npm i
-chown root:root "/root/.npm"
+chown -R 65532:65532 .
 npm run package
 filename="$(npm pack --dry-run | tail -n 1)"
 echo "$1"
