@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/scheduleonce/eslint-config-oncehub/issues"
   },
-  "homepage": "https://github.com/scheduleonce/eslint-config-oncehub#readme"
+  "homepage": "https://github.com/scheduleonce/eslint-config-oncehub#readme",
+  "devDependencies": {
+    "semver": "7.5.3"
+  }
 }
