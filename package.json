@@ -4,18 +4,24 @@
   "description": "ESLint configuration for micro-services built using Node.js and TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test",
     "package": "npm pack"
   },
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
   "author": "Rajat Saxena <rajat.saxena@oncehub.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.6.0",
-    "@typescript-eslint/parser": "^5.6.0",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-sonarjs": "^0.11.0",
-    "typescript": "^4.1.3"
+    "@eslint/js": "^9.14.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-sonarjs": "^2.0.4",
+    "typescript-eslint": "^8.13.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
   },
   "repository": {
     "type": "git",
@@ -24,5 +30,10 @@
   "bugs": {
     "url": "https://github.com/scheduleonce/eslint-config-oncehub/issues"
   },
-  "homepage": "https://github.com/scheduleonce/eslint-config-oncehub#readme"
+  "homepage": "https://github.com/scheduleonce/eslint-config-oncehub#readme",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ]
 }
