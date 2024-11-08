@@ -4,8 +4,7 @@
   "description": "ESLint configuration for micro-services built using Node.js and TypeScript",
   "main": "index.js",
   "scripts": {
-    "test": "node test",
-    "package": "npm pack"
+    "test": "node test"
   },
   "engines": {
     "node": ">=18"
