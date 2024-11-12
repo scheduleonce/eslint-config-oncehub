@@ -20,12 +20,13 @@ Note that it requires ESlint v9 and above.
 
 ## Usage
 
-In your `.eslintrc` file, put `@oncehub/eslint-config` under `extends` array as shown below.
+Import the package inside of an eslint.config.js file and add it into the exported array, like this:
 
 ```js
-module.exports = {
-  extends: ["@oncehub/eslint-config"],
-};
+// eslint.config.js
+import oncehub from "@oncehub/eslint-config";
+
+export default [...oncehub];
 ```
 
 ## Development
