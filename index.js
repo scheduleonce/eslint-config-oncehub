@@ -1,6 +1,7 @@
 import js from "@eslint/js";
 import prettierConfig from "eslint-config-prettier";
 import * as typescriptEslintPlugin from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
 import sonarjs from "eslint-plugin-sonarjs";
 
 export default [
@@ -16,7 +17,7 @@ export default [
         es6: true,
         node: true,
       },
-      parser: typescriptEslintPlugin.parser,
+      parser: tsParser,
       parserOptions: {
         ecmaVersion: 2018,
         sourceType: "module",
