@@ -4,7 +4,7 @@
 
 > ESLint configuration for services built with Node.js and TypeScript.
 
-The configuration extends `@typescript-eslint/recommended`, `eslint-plugin-sonarjs`, `prettier` ESLint configurations.
+The configuration exports and extends `@typescript-eslint/recommended`, `eslint-plugin-sonarjs`, `prettier` ESLint configurations.
 
 It is compatible with ESlint >= v9 configuration format (flat config).
 
@@ -20,7 +20,7 @@ Note that it requires ESlint v9 and above.
 
 ## Usage
 
-Import the package inside of an eslint.config.js file and add it into the exported array, like this:
+Import the package inside of an `eslint.config.js` file and add it into the exported array, like this:
 
 ```js
 // eslint.config.js
