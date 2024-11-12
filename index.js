@@ -3,6 +3,7 @@ import prettierConfig from "eslint-config-prettier";
 import * as typescriptEslintPlugin from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 import sonarjs from "eslint-plugin-sonarjs";
+import globals from "globals";
 
 export default [
   js.configs.recommended,
@@ -12,10 +13,10 @@ export default [
     files: ["**/*.{js,ts,jsx,tsx}"],
     languageOptions: {
       globals: {
+        ...globals.browser,
+        ...globals.node,
         Atomics: "readonly",
         SharedArrayBuffer: "readonly",
-        es6: true,
-        node: true,
       },
       parser: tsParser,
       parserOptions: {
