@@ -40,6 +40,7 @@ export default tseslint.config(
         "error",
         { assertionStyle: "angle-bracket" },
       ],
+      "import/no-unresolved": "off",
     },
   },
   // overriding rules specifically for test files

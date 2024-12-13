@@ -82,7 +82,7 @@
   "@typescript-eslint/prefer-as-const": [2],
   "@typescript-eslint/prefer-namespace-keyword": [2],
   "@typescript-eslint/triple-slash-reference": [2],
-  "import/no-unresolved": [2],
+  "import/no-unresolved": [0],
   "import/named": [2],
   "import/namespace": [2],
   "import/default": [2],
