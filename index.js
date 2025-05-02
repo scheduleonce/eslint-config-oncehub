@@ -24,7 +24,6 @@ export default [
     },
     plugins: {
       "@typescript-eslint": typescriptEslintPlugin,
-      // sonarjs,
     },
     rules: {
       "@typescript-eslint/no-use-before-define": "off",
