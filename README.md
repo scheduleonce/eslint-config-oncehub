@@ -49,7 +49,7 @@ To generate a new rules snapshot file:
 $ npx eslint --print-config index.js -c index.js > output.json
 ```
 
-Copy the rules from the output file into `test/rules-snapshot.js`
+Copy the rules from the output file into `test/rules-snapshot.json`
 
 ### Deployment
 
