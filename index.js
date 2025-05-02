@@ -1,33 +1,19 @@
-import js from "@eslint/js";
-import prettierConfig from "eslint-config-prettier";
-import * as typescriptEslintPlugin from "@typescript-eslint/eslint-plugin";
+import eslint from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
+import tseslint from "typescript-eslint";
 import sonarjs from "eslint-plugin-sonarjs";
 
-export default [
-  js.configs.recommended,
+export default tseslint.config(
+  eslint.configs.recommended,
+  tseslint.configs.recommended,
   sonarjs.configs.recommended,
-  prettierConfig,
+  eslintConfigPrettier,
   {
     files: ["**/*.{js,ts,jsx,tsx}"],
-    languageOptions: {
-      globals: {
-        Atomics: "readonly",
-        SharedArrayBuffer: "readonly",
-        es6: true,
-        node: true,
-      },
-      parser: typescriptEslintPlugin.parser,
-      parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: "module",
-      },
-    },
-    plugins: {
-      "@typescript-eslint": typescriptEslintPlugin,
-    },
     rules: {
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-inferrable-types": "off",
+      "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": "error",
       "@typescript-eslint/interface-name-prefix": "off",
       "@typescript-eslint/consistent-type-assertions": [
@@ -43,5 +29,5 @@ export default [
     rules: {
       "@typescript-eslint/no-empty-function": "off",
     },
-  },
-];
+  }
+);
