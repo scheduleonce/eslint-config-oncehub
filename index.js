@@ -10,6 +10,11 @@ export default tseslint.config(
   eslintConfigPrettier,
   {
     files: ["**/*.{js,ts,jsx,tsx}"],
+    languageOptions: {
+      parserOptions: {
+        project: './tsconfig.json',
+      },
+    },
     rules: {
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-inferrable-types": "off",
