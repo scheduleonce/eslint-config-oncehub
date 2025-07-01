@@ -106,7 +106,7 @@
   "sonarjs/prefer-single-boolean-return": [2],
   "sonarjs/unused-import": [2],
   "sonarjs/fixme-tag": [2],
-  "sonarjs/todo-tag": [2],
+  "sonarjs/todo-tag": [1],
   "sonarjs/useless-string-operation": [0],
   "sonarjs/no-unused-function-argument": [0],
   "sonarjs/no-duplicate-string": [0],
