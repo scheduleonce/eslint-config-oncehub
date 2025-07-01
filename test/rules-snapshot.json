@@ -227,7 +227,6 @@
   "sonarjs/no-unused-collection": [2],
   "sonarjs/no-os-command-from-path": [2],
   "sonarjs/no-misleading-array-reverse": [2],
-  "sonarjs/no-invalid-await": [2],
   "sonarjs/no-for-in-iterable": [0],
   "sonarjs/no-element-overwrite": [2],
   "sonarjs/no-identical-functions": [2],
