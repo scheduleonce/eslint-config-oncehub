@@ -715,5 +715,6 @@
       "assertionStyle": "angle-bracket"
     }
   ],
-  "@typescript-eslint/explicit-function-return-type": [0]
+  "@typescript-eslint/explicit-function-return-type": [0],
+  "@typescript-eslint/no-deprecated": [1]
 }

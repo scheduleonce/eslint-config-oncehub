@@ -22,6 +22,7 @@ export default tseslint.config(
       ],
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-deprecated": "warn",
       "sonarjs/todo-tag": "warn",
     },
   },
