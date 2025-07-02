@@ -1,6 +1,6 @@
 {
   "name": "@oncehub/eslint-config",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "ESLint configuration for micro-services built using Node.js and TypeScript",
   "main": "index.js",
   "scripts": {
