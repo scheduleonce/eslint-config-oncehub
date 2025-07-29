@@ -1,6 +1,6 @@
 {
   "name": "@oncehub/eslint-config",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "ESLint configuration for micro-services built using Node.js and TypeScript",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "@eslint/js": "^9.25.1",
     "@types/eslint__js": "^9.14.0",
-    "eslint-config-prettier": "^10.1.2",
+    "eslint-config-prettier": "10.1.8",
     "eslint-plugin-sonarjs": "^3.0.2",
     "typescript-eslint": "^8.31.1"
   },
