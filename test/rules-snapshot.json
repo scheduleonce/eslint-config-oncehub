@@ -2283,7 +2283,7 @@
   "@typescript-eslint/consistent-type-assertions": [
     2,
     {
-      "assertionStyle": "angle-bracket"
+      "assertionStyle": "as"
     }
   ],
   "@typescript-eslint/explicit-function-return-type": [
