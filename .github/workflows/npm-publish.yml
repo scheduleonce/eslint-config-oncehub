@@ -1,11 +1,17 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
+# This workflow will run tests using node and then publish a package to npm when a release is created
+# For more information see:
+# https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
+# https://docs.npmjs.com/trusted-publishers
 
 name: Node.js Package
 
 on:
   release:
     types: [created]
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   build:
@@ -14,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - run: npm ci
       - run: npm test
 
@@ -25,10 +31,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 24
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       # scoped packages are private by default so need to add public flag
       - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
