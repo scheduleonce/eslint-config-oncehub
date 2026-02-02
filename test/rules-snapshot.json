@@ -511,9 +511,6 @@
   "sonarjs/no-skipped-tests": [
     2
   ],
-  "sonarjs/no-one-iteration-loop": [
-    2
-  ],
   "sonarjs/no-identical-expressions": [
     2
   ],
@@ -1166,6 +1163,9 @@
   "sonarjs/no-exclusive-tests": [
     2
   ],
+  "sonarjs/hardcoded-secret-signatures": [
+    2
+  ],
   "sonarjs/jsx-no-leaked-render": [
     2
   ],
@@ -1197,6 +1197,12 @@
     2
   ],
   "sonarjs/no-async-constructor": [
+    2
+  ],
+  "sonarjs/review-blockchain-mnemonic": [
+    2
+  ],
+  "sonarjs/dynamically-constructed-templates": [
     2
   ],
   "curly": [
