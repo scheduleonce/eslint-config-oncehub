@@ -23,7 +23,7 @@ export default tseslint.config(
       "@typescript-eslint/interface-name-prefix": "off",
       "@typescript-eslint/consistent-type-assertions": [
         "error",
-        { assertionStyle: "angle-bracket" },
+        { assertionStyle: "as" },
       ],
       "@typescript-eslint/no-explicit-any": "off",
       "@typescript-eslint/explicit-function-return-type": "off",
