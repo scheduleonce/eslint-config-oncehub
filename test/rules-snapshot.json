@@ -125,7 +125,10 @@
     2
   ],
   "no-misleading-character-class": [
-    2
+    2,
+    {
+      "allowEscape": false
+    }
   ],
   "no-new-native-nonconstructor": [
     2
@@ -163,13 +166,16 @@
   "no-shadow-restricted-names": [
     2,
     {
-      "reportGlobalThis": false
+      "reportGlobalThis": true
     }
   ],
   "no-sparse-arrays": [
     2
   ],
   "no-this-before-super": [
+    2
+  ],
+  "no-unassigned-vars": [
     2
   ],
   "no-undef": [
@@ -208,6 +214,9 @@
   "no-unused-vars": [
     0
   ],
+  "no-useless-assignment": [
+    2
+  ],
   "no-useless-backreference": [
     2
   ],
@@ -222,6 +231,12 @@
   ],
   "no-with": [
     2
+  ],
+  "preserve-caught-error": [
+    2,
+    {
+      "requireCatchParameter": false
+    }
   ],
   "require-yield": [
     2
@@ -476,9 +491,6 @@
     0
   ],
   "sonarjs/function-inside-loop": [
-    2
-  ],
-  "sonarjs/code-eval": [
     2
   ],
   "sonarjs/no-variable-usage-before-declaration": [
@@ -739,10 +751,6 @@
   "sonarjs/no-use-of-empty-return-value": [
     2
   ],
-  "sonarjs/enforce-trailing-comma": [
-    0,
-    "always-multiline"
-  ],
   "sonarjs/void-use": [
     2
   ],
@@ -779,9 +787,6 @@
   ],
   "sonarjs/no-reference-error": [
     0
-  ],
-  "sonarjs/super-invocation": [
-    2
   ],
   "sonarjs/no-all-duplicated-branches": [
     2
@@ -1203,6 +1208,9 @@
     2
   ],
   "sonarjs/dynamically-constructed-templates": [
+    2
+  ],
+  "sonarjs/no-session-cookies-on-static-assets": [
     2
   ],
   "curly": [
