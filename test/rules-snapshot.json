@@ -763,6 +763,9 @@
   "sonarjs/non-number-in-arithmetic-expression": [
     0
   ],
+  "sonarjs/code-eval": [
+    2
+  ],
   "sonarjs/cognitive-complexity": [
     2,
     15
