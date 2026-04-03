@@ -16,10 +16,10 @@
     "@eslint/js": "^10.0.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-sonarjs": "^4.0.0",
-    "typescript-eslint": "^8.57.2"
+    "typescript-eslint": "^8.58.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": "^10.1.0"
   },
   "repository": {
     "type": "git",
