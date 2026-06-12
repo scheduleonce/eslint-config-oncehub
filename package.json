@@ -1,6 +1,6 @@
 {
   "name": "@oncehub/eslint-config",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "description": "ESLint configuration for micro-services built using Node.js and TypeScript",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,9 @@
   },
   "peerDependencies": {
     "eslint": "^10.3.0"
+  },
+  "devDependencies": {
+    "eslint": "10.3.0"
   },
   "repository": {
     "type": "git",
