@@ -6,7 +6,10 @@
     2
   ],
   "getter-return": [
-    2
+    2,
+    {
+      "allowImplicit": false
+    }
   ],
   "no-async-promise-executor": [
     2
@@ -21,7 +24,8 @@
     2
   ],
   "no-cond-assign": [
-    2
+    2,
+    "except-parens"
   ],
   "no-const-assign": [
     2
@@ -30,7 +34,10 @@
     2
   ],
   "no-constant-condition": [
-    2
+    2,
+    {
+      "checkLoops": "allExceptWhileTrue"
+    }
   ],
   "no-control-regex": [
     2
@@ -57,13 +64,19 @@
     2
   ],
   "no-empty": [
-    2
+    2,
+    {
+      "allowEmptyCatch": false
+    }
   ],
   "no-empty-character-class": [
     2
   ],
   "no-empty-pattern": [
-    2
+    2,
+    {
+      "allowObjectPatternsAsParameters": false
+    }
   ],
   "no-empty-static-block": [
     2
@@ -72,31 +85,50 @@
     2
   ],
   "no-extra-boolean-cast": [
-    2
+    2,
+    {}
   ],
   "no-fallthrough": [
-    2
+    2,
+    {
+      "allowEmptyCase": false,
+      "reportUnusedFallthroughComment": false
+    }
   ],
   "no-func-assign": [
     2
   ],
   "no-global-assign": [
-    2
+    2,
+    {
+      "exceptions": []
+    }
   ],
   "no-import-assign": [
     2
   ],
   "no-invalid-regexp": [
-    2
+    2,
+    {}
   ],
   "no-irregular-whitespace": [
-    2
+    2,
+    {
+      "skipComments": false,
+      "skipJSXText": false,
+      "skipRegExps": false,
+      "skipStrings": true,
+      "skipTemplates": false
+    }
   ],
   "no-loss-of-precision": [
     2
   ],
   "no-misleading-character-class": [
-    2
+    2,
+    {
+      "allowEscape": false
+    }
   ],
   "no-new-native-nonconstructor": [
     2
@@ -114,19 +146,28 @@
     2
   ],
   "no-redeclare": [
-    2
+    2,
+    {
+      "builtinGlobals": true
+    }
   ],
   "no-regex-spaces": [
     2
   ],
   "no-self-assign": [
-    2
+    2,
+    {
+      "props": true
+    }
   ],
   "no-setter-return": [
     2
   ],
   "no-shadow-restricted-names": [
-    2
+    2,
+    {
+      "reportGlobalThis": true
+    }
   ],
   "no-sparse-arrays": [
     2
@@ -134,8 +175,14 @@
   "no-this-before-super": [
     2
   ],
-  "no-undef": [
+  "no-unassigned-vars": [
     2
+  ],
+  "no-undef": [
+    2,
+    {
+      "typeof": false
+    }
   ],
   "no-unexpected-multiline": [
     0
@@ -147,10 +194,16 @@
     2
   ],
   "no-unsafe-negation": [
-    2
+    2,
+    {
+      "enforceForOrderingRelations": false
+    }
   ],
   "no-unsafe-optional-chaining": [
-    2
+    2,
+    {
+      "disallowArithmeticOperators": false
+    }
   ],
   "no-unused-labels": [
     2
@@ -161,6 +214,9 @@
   "no-unused-vars": [
     0
   ],
+  "no-useless-assignment": [
+    2
+  ],
   "no-useless-backreference": [
     2
   ],
@@ -168,19 +224,35 @@
     2
   ],
   "no-useless-escape": [
-    2
+    2,
+    {
+      "allowRegexCharacters": []
+    }
   ],
   "no-with": [
     2
+  ],
+  "preserve-caught-error": [
+    2,
+    {
+      "requireCatchParameter": false
+    }
   ],
   "require-yield": [
     2
   ],
   "use-isnan": [
-    2
+    2,
+    {
+      "enforceForIndexOf": false,
+      "enforceForSwitchCase": true
+    }
   ],
   "valid-typeof": [
-    2
+    2,
+    {
+      "requireStringLiterals": false
+    }
   ],
   "@typescript-eslint/ban-ts-comment": [
     2
@@ -228,10 +300,22 @@
     2
   ],
   "no-unused-expressions": [
-    0
+    0,
+    {
+      "allowShortCircuit": false,
+      "allowTernary": false,
+      "allowTaggedTemplates": false,
+      "enforceForJSX": false,
+      "ignoreDirectives": false
+    }
   ],
   "@typescript-eslint/no-unused-expressions": [
-    2
+    2,
+    {
+      "allowShortCircuit": false,
+      "allowTaggedTemplates": false,
+      "allowTernary": false
+    }
   ],
   "@typescript-eslint/no-unused-vars": [
     2
@@ -249,22 +333,39 @@
     2
   ],
   "sonarjs/function-name": [
-    0
+    0,
+    {
+      "format": "^[_a-z][a-zA-Z0-9]*$"
+    }
   ],
   "sonarjs/class-name": [
-    2
+    2,
+    {
+      "format": "^\\$?[A-Z][a-zA-Z0-9]*$"
+    }
   ],
   "sonarjs/max-lines": [
-    0
+    0,
+    {
+      "maximum": 1000
+    }
   ],
   "sonarjs/no-tab": [
     0
   ],
   "sonarjs/variable-name": [
-    0
+    0,
+    {
+      "format": "^[_$A-Za-z][$A-Za-z0-9]*$|^[_$A-Z][_$A-Z0-9]+$"
+    }
   ],
   "sonarjs/comment-regex": [
-    0
+    0,
+    {
+      "regularExpression": "",
+      "message": "The regular expression matches this comment.",
+      "flags": ""
+    }
   ],
   "sonarjs/no-commented-code": [
     2
@@ -276,13 +377,19 @@
     2
   ],
   "sonarjs/nested-control-flow": [
-    0
+    0,
+    {
+      "maximumNestingLevel": 3
+    }
   ],
   "sonarjs/too-many-break-or-continue-in-loop": [
     0
   ],
   "sonarjs/max-lines-per-function": [
-    0
+    0,
+    {
+      "maximum": 200
+    }
   ],
   "sonarjs/no-nested-incdec": [
     0
@@ -297,7 +404,10 @@
     0
   ],
   "sonarjs/expression-complexity": [
-    0
+    0,
+    {
+      "max": 3
+    }
   ],
   "sonarjs/no-redundant-parentheses": [
     0
@@ -330,7 +440,11 @@
     0
   ],
   "sonarjs/no-duplicate-string": [
-    0
+    0,
+    {
+      "threshold": 3,
+      "ignoreStrings": "application/json"
+    }
   ],
   "sonarjs/no-case-label-in-switch": [
     2
@@ -357,13 +471,18 @@
     2
   ],
   "sonarjs/file-header": [
-    0
+    0,
+    {
+      "headerFormat": "",
+      "isRegularExpression": false
+    }
   ],
   "sonarjs/call-argument-line": [
     2
   ],
   "sonarjs/max-switch-cases": [
-    2
+    2,
+    30
   ],
   "sonarjs/no-unused-vars": [
     2
@@ -399,12 +518,12 @@
     0
   ],
   "sonarjs/cyclomatic-complexity": [
-    0
+    0,
+    {
+      "threshold": 10
+    }
   ],
   "sonarjs/no-skipped-tests": [
-    2
-  ],
-  "sonarjs/no-one-iteration-loop": [
     2
   ],
   "sonarjs/no-identical-expressions": [
@@ -435,10 +554,21 @@
     2
   ],
   "sonarjs/no-nested-functions": [
-    2
+    2,
+    {
+      "threshold": 4
+    }
   ],
   "sonarjs/no-hardcoded-passwords": [
-    2
+    2,
+    {
+      "passwordWords": [
+        "password",
+        "pwd",
+        "passwd",
+        "passphrase"
+      ]
+    }
   ],
   "sonarjs/sql-queries": [
     2
@@ -549,7 +679,10 @@
     2
   ],
   "sonarjs/new-operator-misuse": [
-    2
+    2,
+    {
+      "considerJSDoc": false
+    }
   ],
   "sonarjs/no-delete-var": [
     2
@@ -591,7 +724,11 @@
     2
   ],
   "sonarjs/arrow-function-convention": [
-    0
+    0,
+    {
+      "requireParameterParentheses": false,
+      "requireBodyBraces": false
+    }
   ],
   "sonarjs/class-prototype": [
     0
@@ -617,9 +754,6 @@
   "sonarjs/no-use-of-empty-return-value": [
     2
   ],
-  "sonarjs/enforce-trailing-comma": [
-    0
-  ],
   "sonarjs/void-use": [
     2
   ],
@@ -633,7 +767,8 @@
     0
   ],
   "sonarjs/cognitive-complexity": [
-    2
+    2,
+    15
   ],
   "sonarjs/argument-type": [
     2
@@ -655,9 +790,6 @@
   ],
   "sonarjs/no-reference-error": [
     0
-  ],
-  "sonarjs/super-invocation": [
-    2
   ],
   "sonarjs/no-all-duplicated-branches": [
     2
@@ -683,9 +815,6 @@
   "sonarjs/no-misleading-array-reverse": [
     2
   ],
-  "sonarjs/no-invalid-await": [
-    2
-  ],
   "sonarjs/no-for-in-iterable": [
     0
   ],
@@ -693,7 +822,8 @@
     2
   ],
   "sonarjs/no-identical-functions": [
-    2
+    2,
+    3
   ],
   "sonarjs/no-empty-collection": [
     2
@@ -711,7 +841,10 @@
     0
   ],
   "sonarjs/no-implicit-dependencies": [
-    0
+    0,
+    {
+      "whitelist": []
+    }
   ],
   "sonarjs/no-useless-intersection": [
     2
@@ -738,7 +871,10 @@
     2
   ],
   "sonarjs/max-union-size": [
-    0
+    0,
+    {
+      "threshold": 3
+    }
   ],
   "sonarjs/no-undefined-argument": [
     2
@@ -786,7 +922,7 @@
     2
   ],
   "sonarjs/no-unsafe-unzip": [
-    2
+    0
   ],
   "sonarjs/cors": [
     2
@@ -825,7 +961,12 @@
     2
   ],
   "sonarjs/no-intrusive-permissions": [
-    2
+    2,
+    {
+      "permissions": [
+        "geolocation"
+      ]
+    }
   ],
   "sonarjs/insecure-jwt-token": [
     2
@@ -837,7 +978,11 @@
     2
   ],
   "sonarjs/content-length": [
-    2
+    2,
+    {
+      "fileUploadSizeLimit": 8000000,
+      "standardSizeLimit": 2000000
+    }
   ],
   "sonarjs/disabled-resource-integrity": [
     2
@@ -876,7 +1021,10 @@
     2
   ],
   "sonarjs/regex-complexity": [
-    2
+    2,
+    {
+      "threshold": 20
+    }
   ],
   "sonarjs/anchor-precedence": [
     2
@@ -1014,9 +1162,16 @@
     2
   ],
   "sonarjs/no-hardcoded-secrets": [
-    2
+    2,
+    {
+      "secretWords": "api[_.-]?key,auth,credential,secret,token",
+      "randomnessSensibility": 5
+    }
   ],
   "sonarjs/no-exclusive-tests": [
+    2
+  ],
+  "sonarjs/hardcoded-secret-signatures": [
     2
   ],
   "sonarjs/jsx-no-leaked-render": [
@@ -1052,8 +1207,21 @@
   "sonarjs/no-async-constructor": [
     2
   ],
+  "sonarjs/review-blockchain-mnemonic": [
+    2
+  ],
+  "sonarjs/dynamically-constructed-templates": [
+    2
+  ],
+  "sonarjs/no-session-cookies-on-static-assets": [
+    2
+  ],
+  "sonarjs/dompurify-unsafe-config": [
+    2
+  ],
   "curly": [
-    0
+    0,
+    "all"
   ],
   "@stylistic/lines-around-comment": [
     0

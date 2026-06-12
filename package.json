@@ -21,6 +21,9 @@
   "peerDependencies": {
     "eslint": "^10.3.0"
   },
+  "devDependencies": {
+    "eslint": "10.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scheduleonce/eslint-config-oncehub.git"
