@@ -368,7 +368,7 @@
     }
   ],
   "sonarjs/no-commented-code": [
-    2
+    0
   ],
   "sonarjs/elseif-without-else": [
     0
@@ -450,6 +450,9 @@
     2
   ],
   "sonarjs/no-parameter-reassignment": [
+    2
+  ],
+  "sonarjs/no-floating-point-equality": [
     2
   ],
   "sonarjs/prefer-while": [
@@ -602,9 +605,6 @@
   ],
   "sonarjs/for-loop-increment-sign": [
     2
-  ],
-  "sonarjs/cookies": [
-    0
   ],
   "sonarjs/null-dereference": [
     2
@@ -886,16 +886,10 @@
     2
   ],
   "sonarjs/os-command": [
-    2
+    0
   ],
   "sonarjs/no-redundant-optional": [
     2
-  ],
-  "sonarjs/regular-expr": [
-    0
-  ],
-  "sonarjs/encryption": [
-    0
   ],
   "sonarjs/hashing": [
     2
@@ -903,20 +897,8 @@
   "sonarjs/bool-param-default": [
     0
   ],
-  "sonarjs/xpath": [
-    0
-  ],
-  "sonarjs/sockets": [
-    0
-  ],
   "sonarjs/no-try-promise": [
     2
-  ],
-  "sonarjs/process-argv": [
-    0
-  ],
-  "sonarjs/standard-input": [
-    0
   ],
   "sonarjs/unverified-certificate": [
     2
@@ -961,7 +943,7 @@
     2
   ],
   "sonarjs/no-intrusive-permissions": [
-    2,
+    0,
     {
       "permissions": [
         "geolocation"
@@ -975,7 +957,7 @@
     2
   ],
   "sonarjs/hidden-files": [
-    2
+    0
   ],
   "sonarjs/content-length": [
     2,
@@ -991,10 +973,10 @@
     2
   ],
   "sonarjs/no-mixed-content": [
-    2
+    0
   ],
   "sonarjs/frame-ancestors": [
-    2
+    0
   ],
   "sonarjs/no-mime-sniff": [
     2
@@ -1005,17 +987,11 @@
   "sonarjs/strict-transport-security": [
     2
   ],
-  "sonarjs/certificate-transparency": [
-    0
-  ],
-  "sonarjs/dns-prefetching": [
-    0
-  ],
   "sonarjs/confidential-information-logging": [
-    2
+    0
   ],
   "sonarjs/no-ip-forward": [
-    2
+    0
   ],
   "sonarjs/empty-string-repetition": [
     2
@@ -1025,6 +1001,9 @@
     {
       "threshold": 20
     }
+  ],
+  "sonarjs/no-incompatible-assertion-types": [
+    2
   ],
   "sonarjs/anchor-precedence": [
     2
@@ -1053,6 +1032,12 @@
   "sonarjs/session-regeneration": [
     2
   ],
+  "sonarjs/prefer-specific-assertions": [
+    2
+  ],
+  "sonarjs/no-trivial-assertions": [
+    2
+  ],
   "sonarjs/test-check-exception": [
     2
   ],
@@ -1074,9 +1059,6 @@
   "sonarjs/chai-determinate-assertion": [
     2
   ],
-  "sonarjs/aws-s3-bucket-server-encryption": [
-    0
-  ],
   "sonarjs/aws-s3-bucket-insecure-http": [
     2
   ],
@@ -1097,9 +1079,6 @@
   ],
   "sonarjs/aws-s3-bucket-public-access": [
     2
-  ],
-  "sonarjs/no-vue-bypass-sanitization": [
-    0
   ],
   "sonarjs/aws-iam-all-privileges": [
     2
@@ -1217,6 +1196,24 @@
     2
   ],
   "sonarjs/dompurify-unsafe-config": [
+    2
+  ],
+  "sonarjs/no-duplicate-test-title": [
+    2
+  ],
+  "sonarjs/async-test-assertions": [
+    2
+  ],
+  "sonarjs/no-empty-test-title": [
+    2
+  ],
+  "sonarjs/hooks-before-test-cases": [
+    2
+  ],
+  "sonarjs/no-forced-browser-interaction": [
+    2
+  ],
+  "sonarjs/super-linear-regex": [
     2
   ],
   "curly": [
