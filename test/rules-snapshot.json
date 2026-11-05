@@ -559,7 +559,7 @@
   "sonarjs/no-nested-functions": [
     2,
     {
-      "threshold": 4
+      "threshold": 5
     }
   ],
   "sonarjs/no-hardcoded-passwords": [
@@ -670,6 +670,9 @@
     2
   ],
   "sonarjs/no-alphabetical-sort": [
+    2
+  ],
+  "sonarjs/no-fixed-wait-in-tests": [
     2
   ],
   "sonarjs/no-incomplete-assertions": [
@@ -1044,6 +1047,9 @@
   "sonarjs/stable-tests": [
     2
   ],
+  "sonarjs/parameterized-tests": [
+    2
+  ],
   "sonarjs/no-empty-after-reluctant": [
     2
   ],
@@ -1213,7 +1219,82 @@
   "sonarjs/no-forced-browser-interaction": [
     2
   ],
+  "sonarjs/assertions-in-test-cases": [
+    2
+  ],
+  "sonarjs/synchronous-suite-callback": [
+    2
+  ],
   "sonarjs/super-linear-regex": [
+    2
+  ],
+  "sonarjs/prefer-native-lodash-alternative": [
+    2
+  ],
+  "sonarjs/no-default-utility-imports": [
+    2
+  ],
+  "sonarjs/memoize-cache-key": [
+    2
+  ],
+  "sonarjs/no-debug-commands-in-ui-tests": [
+    2
+  ],
+  "sonarjs/no-mixed-completion-style": [
+    0
+  ],
+  "sonarjs/no-interpolation-in-inline-snapshots": [
+    2
+  ],
+  "sonarjs/explicit-test-skip": [
+    2
+  ],
+  "sonarjs/no-empty-parameterized-test-dataset": [
+    2
+  ],
+  "sonarjs/testing-library-query-assertion": [
+    2
+  ],
+  "sonarjs/synchronous-exception-assertions": [
+    2
+  ],
+  "sonarjs/composite-assertions": [
+    0
+  ],
+  "sonarjs/no-duplicate-parameterized-test-case": [
+    2
+  ],
+  "sonarjs/no-debounce-throttle-in-render": [
+    2
+  ],
+  "sonarjs/avoid-mutating-nested-properties-of-shallow-clones": [
+    2
+  ],
+  "sonarjs/prefer-native-jquery-alternative": [
+    2
+  ],
+  "sonarjs/no-vue-class-component": [
+    2
+  ],
+  "sonarjs/no-vue-mixins": [
+    2
+  ],
+  "sonarjs/testing-library-prefer-query-by-disappearance": [
+    2
+  ],
+  "sonarjs/prefer-cypress-should": [
+    2
+  ],
+  "sonarjs/no-mutate-reactive-state-in-updated-hook": [
+    2
+  ],
+  "sonarjs/vitest-mock-at-module-scope": [
+    2
+  ],
+  "sonarjs/no-networkidle-wait": [
+    0
+  ],
+  "sonarjs/prefer-native-axios-alternative": [
     2
   ],
   "curly": [
